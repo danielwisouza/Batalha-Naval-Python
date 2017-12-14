@@ -23,7 +23,7 @@ def compareResults(pResult, pExpected):
     if len(linesr) == len(linese):
         for indexLine in range(0,len(linese)):
             if linesr[indexLine].strip() != linese[indexLine].strip():
-                return 'Resultado: Saidas divergentes\nEsperado: {0}\nProcessado: {1}'.format(linese[index].strip(), linesr[index].strip())			
+                return 'Resultado: Saidas divergentes\nEsperado: {0}\nProcessado: {1}'.format(linese[indexLine].strip(), linesr[indexLine].strip())			
         return 'Processado com sucesso'
     else:
         return 'Resultado: Numero de linhas do arquivo gerado incorretas\nEsperado: {0}\nProcessado: {1}'.format(len(linese), len(linesr))
